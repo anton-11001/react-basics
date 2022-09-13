@@ -1,0 +1,19 @@
+.input {
+  width: 100%;
+  padding: 6px 14px;
+  margin: 6px 0;
+  border: 1px solid navy;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: blue;
+  box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.1);
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
