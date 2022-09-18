@@ -1,0 +1,76 @@
+.field {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.control {
+  position: relative;
+  display: block;
+}
+
+.control::after {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  pointer-events: none;
+  border-right: 2px solid #6b7280;
+  border-bottom: 2px solid #6b7280;
+  transform: translateY(-65%) rotate(45deg);
+}
+
+.select {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 40px 8px 12px;
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  appearance: none;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.select:hover {
+  border-color: #9ca3af;
+}
+
+.select:focus {
+  border-color: navy;
+  box-shadow: 0 0 0 3px rgba(0, 0, 128, 0.12);
+}
+
+.select:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+  background: #f9fafb;
+}
+
+.error {
+  border-color: #dc2626;
+}
+
+.error:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.message {
+  color: #dc2626;
+  font-size: 12px;
+}
