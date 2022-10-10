@@ -1,15 +1,25 @@
 .button {
-  padding: 6px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 16px;
+  color: #ffffff;
   font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
   cursor: pointer;
+  background: navy;
+  border: 1px solid navy;
   border-radius: 6px;
-  border: none;
-  transition: 0.2s;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .primary {
   background: navy;
-  color: white;
+  border-color: navy;
+  color: #ffffff;
 }
 
 .outline {
@@ -21,19 +31,45 @@
 .ghost {
   background: transparent;
   color: navy;
+  border-color: transparent;
+}
+
+.button:hover:not(:disabled) {
+  background: #000066;
+  border-color: #000066;
+}
+
+.outline:hover:not(:disabled),
+.ghost:hover:not(:disabled) {
+  color: navy;
+  background: #eef2ff;
+  border-color: navy;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 128, 0.14);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .sm {
-  padding: 4px 10px;
-  font-size: 12px;
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
 }
 
 .md {
-  padding: 6px 16px;
+  min-height: 40px;
+  padding: 0 16px;
 }
 
 .lg {
-  padding: 10px 20px;
+  min-height: 44px;
+  padding: 0 20px;
   font-size: 16px;
 }
 
