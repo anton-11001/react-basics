@@ -18,14 +18,11 @@ const PostItem = ({ post, remove }) => {
       <div className={classes.actions}>
         <Button
           variant="outline"
-          size="sm"
           onClick={() => router.push(`/posts/${post.id}`)}
         >
           Open
         </Button>
-        <Button size="sm" onClick={() => remove(post)}>
-          Delete
-        </Button>
+        <Button onClick={() => remove(post)}>Delete</Button>
       </div>
     </article>
   );
