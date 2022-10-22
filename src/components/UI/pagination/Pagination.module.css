@@ -16,9 +16,9 @@
 
 .page,
 .control {
-  min-width: 38px;
-  min-height: 38px;
-  padding: 8px 12px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0 12px;
   color: #374151;
   font-size: 14px;
   font-weight: 600;
@@ -57,7 +57,7 @@
 }
 
 .control {
-  min-width: 88px;
+  min-width: 92px;
 }
 
 .control:disabled {
