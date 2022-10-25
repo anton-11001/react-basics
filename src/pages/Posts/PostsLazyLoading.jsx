@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import PostService from "../API/PostService";
-import { usePosts } from "../hooks/usePosts";
-import { useFetching } from "../hooks/useFetching";
-import { getPageCount } from "../utils/pages";
-import Button from "../components/UI/button/Button";
-import PostForm from "../components/PostForm/PostForm";
-import Modal from "../components/UI/modal/Modal";
-import PostFilter from "../components/PostFilter/PostFilter";
-import PostList from "../components/PostList";
-import Loader from "../components/UI/loader/Loader";
-import { useObserver } from "../hooks/useObserver";
-import Select from "../components/UI/select/Select";
+import PostService from "../../API/PostService";
+import { usePosts } from "../../hooks/usePosts";
+import { useFetching } from "../../hooks/useFetching";
+import { getPageCount } from "../../utils/pages";
+import Button from "../../components/UI/button/Button";
+import PostForm from "../../components/PostForm/PostForm";
+import Modal from "../../components/UI/modal/Modal";
+import PostFilter from "../../components/PostFilter/PostFilter";
+import PostList from "../../components/PostList";
+import Loader from "../../components/UI/loader/Loader";
+import { useObserver } from "../../hooks/useObserver";
+import Select from "../../components/UI/select/Select";
 import classes from "./Posts.module.css";
 
 function PostsLazyLoading() {
