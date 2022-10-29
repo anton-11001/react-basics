@@ -34,13 +34,14 @@
   display: inline-flex;
   align-items: center;
   min-height: 36px;
-  padding: 6px 12px;
+  padding: 0 12px;
   color: #374151;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   border-radius: 6px;
-  transition: color 0.2s ease, background 0.2s ease;
+  border: 1px solid transparent;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .link:hover,
@@ -52,6 +53,7 @@
 .active {
   color: navy;
   background: #eef2ff;
+  border-color: #e0e7ff;
 }
 
 .actions {
