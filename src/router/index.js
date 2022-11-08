@@ -1,7 +1,7 @@
 import About from "../pages/About";
 import PostsLazyLoading from "../pages/PostsLazyLoading";
 import PostsPagination from "../pages/PostsPagination";
-import PostIdPage from "../pages/PostIdPage";
+import PostIdPage from "../pages/PostIdPage/PostIdPage";
 import Login from "../pages/Login/Login";
 import Error from "../pages/Error/index";
 
