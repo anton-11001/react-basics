@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import MyButton from "../button/Button";
+import Button from "../button/Button";
 import { AuthContext } from "../../../context";
 import classes from "./Navbar.module.css";
 
 const links = [
-  { to: "/about", label: "About" },
-  { to: "/posts", label: "Posts" },
+  { to: "/posts", label: "Lazy loading" },
+  { to: "/posts-pagination", label: "Pagination" },
 ];
 
 const Navbar = ({ className = "" }) => {
@@ -39,9 +39,9 @@ const Navbar = ({ className = "" }) => {
 
       <div className={classes.actions}>
         {isAuth ? (
-          <MyButton variant="outline" size="sm" onClick={logout}>
+          <Button variant="outline" size="sm" onClick={logout}>
             Logout
-          </MyButton>
+          </Button>
         ) : (
           <Link className={classes.loginLink} to="/login">
             Login
