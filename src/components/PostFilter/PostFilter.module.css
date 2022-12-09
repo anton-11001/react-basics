@@ -1,0 +1,15 @@
+.filter {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.filter > *:first-child {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter > *:last-child {
+  width: 200px;
+}
