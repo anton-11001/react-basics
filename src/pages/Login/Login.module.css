@@ -54,6 +54,17 @@
   margin-top: 8px;
 }
 
+.error {
+  margin: -4px 0 12px;
+  padding: 10px 12px;
+  color: #991b1b;
+  font-size: 14px;
+  line-height: 1.4;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+}
+
 @media (max-width: 480px) {
   .form {
     padding: 24px;
