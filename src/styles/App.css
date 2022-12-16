@@ -30,21 +30,25 @@ body {
 }
 
 .post-enter {
-  transform: translateX(-350px);
+  opacity: 0;
+  transform: translateY(12px);
 }
 
 .post-enter-active {
-  transform: translateX(0);
-  transition: all 500ms ease-in;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 240ms ease, transform 240ms ease;
 }
 
 .post-exit {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .post-exit-active {
-  transform: translateX(-350px);
-  transition: all 500ms ease-in;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease;
 }
 
 @media (max-width: 640px) {
