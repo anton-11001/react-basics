@@ -20,22 +20,29 @@ const PostForm = ({ create }) => {
   };
 
   return (
-    <form className={classes.form}>
-      <h3 className={classes.title}>Create Post</h3>
+    <form className={classes.form} onSubmit={addNewPost}>
+      <div className={classes.header}>
+        <h3 className={classes.title}>Create post</h3>
+        <p className={classes.subtitle}>Add a title and short description.</p>
+      </div>
 
       <Input
+        className={classes.input}
         value={post.title}
         onChange={(e) => setPost({ ...post, title: e.target.value })}
         placeholder="Post title"
       />
 
       <Input
+        className={classes.input}
         value={post.body}
         onChange={(e) => setPost({ ...post, body: e.target.value })}
         placeholder="Post description"
       />
 
-      <Button onClick={addNewPost}>Create</Button>
+      <Button className={classes.submit} type="submit">
+        Create
+      </Button>
     </form>
   );
 };
